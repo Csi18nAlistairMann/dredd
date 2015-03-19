@@ -331,7 +331,7 @@ function trnEdit($ls) {
 // for when the server has replied appear after
 // 
 function sendGet($el, $newmark) {
- var url = "https://rest.mpsvr.com/newmarks/7/" + $newmark;
+ var url = "https://rest.mpsvr.com/newmarks/92,92/" + $newmark;
  if (XMLHttpRequest) {
    var request = new XMLHttpRequest();
    if("withCredentials" in request) {
@@ -407,7 +407,7 @@ function sendPost() {
  $arr = { 'csi18n_xlate_resource' : { 'language' : $cont_lang, 'translation' : $translation, 'visibility' : $vis } };
  $json_s = JSON.stringify($arr);
 
- var url = "https://rest.mpsvr.com/newmarks/7/" + $newmark;
+ var url = "https://rest.mpsvr.com/newmarks/92,92/" + $newmark;
  if (XMLHttpRequest) {
    var request = new XMLHttpRequest();
    if("withCredentials" in request) {
